@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+        
+        <div class="game-options">
+            <div class="theme-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="themeToggle">
+                    <span class="slider round"></span>
+                </label>
+                <span>Dark Mode</span>
+            </div>
+            
+            <div class="game-mode">
+                <button id="singlePlayer" class="active">Single Player</button>
+                <button id="multiPlayer">Multi Player</button>
+            </div>
+        </div>
+
+        <div class="game-info">
+            <div class="player-turn">Player X's Turn</div>
+            <div class="score">
+                <div class="score-x">Player X: <span>0</span></div>
+                <div class="score-o">Player O: <span>0</span></div>
+            </div>
+        </div>
+
+        <div class="board" id="board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+
+        <div class="controls">
+            <button id="restartButton">Restart Game</button>
+            <button id="resetScore">Reset Score</button>
+        </div>
+
+        <div class="game-history">
+            <h2>Game History</h2>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
